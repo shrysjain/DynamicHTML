@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML</title>
+    <link rel="stylesheet" href="scss/html/html.css">
+    <meta name="viewport" content="width=device-width, inital-scale: 1.0">
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </header>
+    <hr>
+    <main>
+      <!-- Header -->
+      <h1>HTML</h1>
+      <p>Welcome to the HTML section. Here you will learn about HTML, what it does, how it is important, and also the basics of using HTML. Let's get started!</p>
+      
+      <!-- Content -->
+      <h2>What is HTML?</h2>
+      <p>HTML is the standard markup language to display documents in a web browser. Typically, web browsers will recieve encoded HTML content and then be able to decode and display the content. Fun fact: this entire website is written with HTML and <span class="code1">Sass</span> (Sass is like an extension of CSS which compiles directly into CSS. We will talk about it later).</p>
+
+      <h2>What Can You Do With HTML?</h2>
+      <p>The answer is lots of things. You can use HTML to make web page, web documents, internet navigation, responsive renders, client or server-side storage, data entry, and much more! The most common thing HTML is used for is for created web pages/documents.</p>
+
+      <h2>Why is HTML Important?</h2>
+      <p>HTML is very important because the programming language is the modern way to create websites, and HTML is probably the best way we have to describe the structure of information on a webpage. Here is one reason that HTML is the superior programming language for creating websites: Compared to the alternatives, HTML content is much easier to read and access with web crawlers in the browser, therefore reducing load time and improving performance, making HTML a popular favorite among web developers.</p>
+
+      <h2>Let's Learn Some Basic HTML</h2>
+      <p>Now that you know all about HTML, let us make a simple website using pure HTML. First we will learn the most common and basic structure of an HTML document.</p>
+
+      <script alt="Embedded HTML example code" src="https://gist.github.com/LilJuiceBox491/eaf8cb1cb0ea324f809fd51ffbb1b9d1.js"></script>
+
+      <p>This is somewhat basic HTML code. Let's break it down. One more thing: HTML is written in tags. Tags are enclosed with &lt; and &gt; symbols. Some tags, like the paragraph tag, require you to put the content for the tag in between the open and closing braces, and some like the linebreak tag (which we will learn about later) just require opening it and not closing it. Now you are ready to understand the HTML code.</p>
+
+      <ol><p><span class="code1">&lt;!DOCTYPE html&gt;</span> - This line of code is the document type declaration. It is the first line of code required in HTML and XHTML documents. It tells the browser interpreting the code what version of HTML the document is written in.</p></ol>
+      <ol><p><span class="code1">&lt;head&gt;&lt;/head&gt;</span> - This is the head tag of an HTML or XHTML document.  This tag contains the metadata of the document. This is important information such as the stylesheet, title, or favicon. Some tags that can be used in the head are the title tag, the meta tag, the style tag, and the link tag, but there are more.</p></ol>
+      <ol><p><span class="code1">&lt;title&gt;&lt;/title&gt;</span> - This is the title tag. This tag is typically placed inside the head tag. The content inside this tag will be displayed above the webpage. On this webpage that you are reading right now, the title is "HTML", and you can see it in your browser above the address bar.</p></ol>
+      <ol><p><span class="code1">&lt;body&gt;&lt;/body&gt;</span> - This is the body tag. It is typically placed outside of but right after the head tag. Unlike the head tag containing information, this contains the actual content of the document. It contains everything, such as the headings, paragraphs, images, hyperlinks, tables, lists, e.t.c.</p></ol>
+      <ol><p><span class="code1">&lt;p&gt;&lt;/p&gt;</span> - This is the paragraph tag. It is typically placed inside the body tag. The content enclosed in this tag is displayed a usually small peice of content on the webpage. This piece of text you are currently reading is inclosed in a paragraph tag.</p></ol>
+   
+      <p>Please note that these are by no means every tag. This is just a basic layout for a basic HTML webpage. Now, we will use some other tags to create another basic document. Throughout this mini-course, we will eventually apply CSS and JavaScript on this very document. First you will see the code, then I will explain it, and finally you will see the output. Let's go!</p>
+
+      <script src="https://gist.github.com/LilJuiceBox491/2cf3e23d45a760a2d751a55bf99fe3e3.js"></script>
+
+      <p>Let us take a look at the new tags we included.</p>
+      <ol><p><span class="code1">&lt;h1&gt;&lt;/h1&gt;</span> - This is the header 1 tag. It is typically placed inside the body. It will show bigger text that is typically considered important to the website, or labeling a section.</p></ol>
+      <ol><p><span class="code1">&lt;h1&gt;&lt;/h1&gt;</span> - This is the button tag. This tag creates a button which can trigger something when clicked, however right now it does nothing.</p></ol>
+
+      <p>Now that we understand the code, let's see what it looks like when we display it.</p>
+
+      <iframe src="https://embeds.liljuicebox491.repl.co/htmlembed1.html" width=100% style="background:#ffffff;border:#ffffff;"></iframe>
+
+      <p>As you can see, we get some big text on the top, and a button with text in it below. If we try to click the button, nothing happens as we didn't specify anything to happen in our code.</p>
+
+      <h3 class="footerbutnotfooter">Now that we have covered HTML, navigate to the CSS section of the tutorial with the navigation bar at the top!</h3>
+    </main>
+  </body>
+</html>

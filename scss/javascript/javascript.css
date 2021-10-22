@@ -1,0 +1,130 @@
+body {
+  background-color: #23272A;
+}
+
+p, pre {
+  font-family: sans-serif;
+  color: #F6F6F6;
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: underline;
+  color: #FFB92E;
+}
+
+.code1 {
+  background-color: grey;
+  color: #F6F6F6;
+  border: 1px solid #F6F6F6;
+}
+
+h1 {
+  font-family: Verdana, sans-serif;
+  font-size: 2.25em;
+  color: #F6F6F6;
+  text-align: center;
+  margin: 0.4em;
+  border-right: solid 3px #FFB92E;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: Verdana, sans-serif;
+  font-size: 1.75em;
+  color: #F6F6F6;
+  text-align: left;
+}
+
+h3 {
+  font-family: Verdana, sans-serif;
+  font-size: 1.45em;
+  color: #F6F6F6;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+li a {
+  font-family: sans-serif;
+  display: block;
+  color: #23272A;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #d1cfcf;
+}
+
+li a:hover:not(.active) {
+  background-color: #d1cfcf;
+}
+
+.active {
+  background-color: #1abc9c;
+}
+
+.footerbutnotfooter {
+  font-family: sans-serif;
+  color: #F6F6F6;
+  font-size: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+h1 {
+  -webkit-animation: animated-text 1500ms steps(150, end) 600ms 1 normal both, animated-cursor 1000ms steps(29, end) infinite;
+          animation: animated-text 1500ms steps(150, end) 600ms 1 normal both, animated-cursor 1000ms steps(29, end) infinite;
+}
+
+@-webkit-keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 220px;
+  }
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 220px;
+  }
+}
+
+@-webkit-keyframes animated-cursor {
+  from {
+    border-right-color: #FFB92E;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: #FFB92E;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/*# sourceMappingURL=javascript.css.map */

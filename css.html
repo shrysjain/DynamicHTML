@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="scss/css/css.css">
+    <meta name="viewport" content="width=device-width, inital-scale: 1.0">
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a class="active" href="css.html">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </header>
+    <hr>
+    <main>
+      <!-- Header -->
+      <h1>CSS</h1>
+      <p>Welcome to the CSS section. Here you will learn about CSS, what it does, how it is important, and the basics of connecting and using CSS. We will also use CSS on our document example from the HTML page to make it look better. Let's get started!</p>
+      
+      <!-- Content -->
+      <h2>What is CSS?</h2>
+      <p>CSS is the programming language used to specify the style of an HTML document. This ranges from things like fonts, to layouts, to colors, and much more. CSS is directly linked to the HTML document. In case you were wondering why the HTML examples looked so basic and ugly, but websites you have seen looked nice, it is likely because of CSS.</p>
+
+      <h2>What Can You Do With CSS?</h2>
+      <p>You can do a variety of things with CSS. CSS can style almost every HTML tag that creates a visible element on the page. CSS allows you to customize the look and feel of the website to use whatever fonts, colors, design, or almost anything else to your liking.</p>
+
+      <h2>Why is CSS Important?</h2>
+      <p>CSS is very important when it comes to web development. For most people, everytime you see a website it has some sort of styling to make it look good. Even this website has CSS to make it look good. This very website uses CSS for many things, from the background color, to the fonts, to the font color, sizing, layouts, animations, positioning, and more! To show how much CSS impacts a website, here is <a href="https://nocss.liljuicebox491.repl.co/" target="_blank" alt="Link to alternate version of this website without CSS or styling">this exact webpage without any CSS or styling</a>. Shocking, right? Styling really changes the feel of a website and can be the difference between a user liking the site and disliking it.</p>
+
+      <h2>How Can We Even Use CSS With Our Website?</h2>
+      <p>There are actually multiple ways to use CSS with an HTML web page. We will cover the two most practical ones now.</p>
+     
+      <h3>Method One: External CSS:</h3>
+      <p>This is how to use CSS in an external file. First, you will need to create another file and give it the <span class="code1">.css</span> file extension (for example, "index.css"). This will be the file in which you write all of your CSS code. Next, you will have to go to your HTML file and go to the head tag. Remember how we said the head tag stores important information that isn't displayed? One example is linking to a CSS file. Once inside the tag, you will need to insert this code:<br><span class="code1">&lt;link rel="stylesheet" href="file.css"&gt;</span>. Make sure to change the href to the name of your CSS file. Now, your CSS file is connected to the HTML and you are free to start coding CSS!</p>
+
+      <h3>Method Two: Internal CSS:</h3>
+      <p>This is how to use CSS directly inside the HTML file. In HTML, we have a special tag called the style tag. To use the style tag, simply go to the head of your HTML file, and insert <span class="code1">&lt;style&gt;&lt;/style&gt;</span>. Inside the style tag, you can write all your CSS code and it will be applied to that document. Easy, right?</p>
+
+      <p>Now, we will learn the basic CSS syntax.</p>
+
+      <h2>How CSS Works</h2>
+      <p>Now that you know all about CSS, let us explain the syntax and format of a CSS file. In CSS, you will use elements in class names to style them. This is the format:<br><span class="code1">element {<br> property: value;<br>}</span><br>where element is the name of the element you are styling, property is what you are styling, and value is what you are styling it to. It might seem a little bit complicated at first, but it gets easy.</p>
+      <p>Now we can write some basic CSS code, and then we'll explain what it does.</p>
+
+      <script src="https://gist.github.com/LilJuiceBox491/fcee379d69e44664cbabae37cc4fc715.js"></script>
+
+      <p>That is a basic demonstration of CSS. Now, let us break it down.</p>
+
+      <ol><p><span class="code1">* {</span> - This is where we specify the element we are styling. We used the asteriks beacuse that means everything, so this will style everything on the document.</p></ol>
+      <ol><p><span class="code1">background-color: red;</span> - This is one example of a CSS property, background-color. If you haven't guessed it, this property sets the background color of whatever element it is nested in. Since we put it in the asteriks, this will make the background color of the entire page red. This property also supports hex, rgb, rgba, and hsl values. Note that every line defining a property and value MUST end with a semicolon at the end.</p></ol>
+      <ol><p><span class="code1">font-family: sans-serif;</span> - This is the font family property. Since it applies to everything, this will make all text on the page use the font sans-serif. This can also support custom fonts.</p></ol>
+      <ol><p><span class="code1">}</span> - This closes the properties being changed for everything on the website.</p></ol>
+      <ol><p><span class="code1">p {</span> - This tells us that now instead of changing everything we will only style the paragraph tag.</p></ol>
+      <ol><p><span class="code1">font-size: 20px;</span> - This makes it so that all paragraphs have a font size of 20 pixels.</p></ol>
+      <ol><p><span class="code1">font-size: 20px;</span> - Close out.</p></ol>
+   
+      <p>Remember, this is NOT everything you can do with CSS. It comes nowhere close! You can read documentations and references if you want to find out about more things you can style with CSS.</p>
+
+      <p>Now that we know some CSS, let us go to that example document we made on the HTML page. We created a header, and a button, but they obviously look very bad. Now we will apply CSS to the document to make it look good.</p>
+
+      <script src="https://gist.github.com/LilJuiceBox491/00ad3cbcb0867327328d782edaaefbb0.js"></script>
+
+      <p>This is a LOT of CSS. The good thing with CSS is that you can understand most properties by just reading it, so I will not be explaining everything new. Now, let's look at the output of this CSS with our HTML document.</p>
+
+      <iframe src="https://embeds.liljuicebox491.repl.co/cssembed1.html" height=290px width=100% style="background:#ffffff;border:#ffffff;"></iframe>
+
+      <p>Now, our document looks much better! We have a theme and layout. However, if you try to click the button, still nothing happens. We will change that with JavaScript.</p>
+
+      <h3 class="footerbutnotfooter">Now that we have covered CSS, navigate to the JavaScript section of the tutorial with the navigation bar at the top!</h3>
+    </main>
+  </body>
+</html>
